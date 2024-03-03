@@ -11,6 +11,7 @@
 		2FF1F30E2B949A0E002BDF85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1F30D2B949A0E002BDF85 /* ContentView.swift */; };
 		2FF1F3102B949A0F002BDF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF1F30F2B949A0F002BDF85 /* Assets.xcassets */; };
 		2FF1F3132B949A0F002BDF85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF1F3122B949A0F002BDF85 /* Preview Assets.xcassets */; };
+		2FF1F31C2B949DE3002BDF85 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1F31B2B949DE3002BDF85 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2FF1F30F2B949A0F002BDF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FF1F3122B949A0F002BDF85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FF1F3142B949A0F002BDF85 /* Sharecord.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sharecord.entitlements; sourceTree = "<group>"; };
+		2FF1F31B2B949DE3002BDF85 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		2FF1F30A2B949A0E002BDF85 /* Sharecord */ = {
 			isa = PBXGroup;
 			children = (
+				2FF1F31A2B949DC8002BDF85 /* Menu */,
 				2FF1F30B2B949A0E002BDF85 /* SharecordApp.swift */,
 				2FF1F30D2B949A0E002BDF85 /* ContentView.swift */,
 				2FF1F30F2B949A0F002BDF85 /* Assets.xcassets */,
@@ -67,6 +70,14 @@
 				2FF1F3122B949A0F002BDF85 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2FF1F31A2B949DC8002BDF85 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2FF1F31B2B949DE3002BDF85 /* MenuView.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FF1F30E2B949A0E002BDF85 /* ContentView.swift in Sources */,
+				2FF1F31C2B949DE3002BDF85 /* MenuView.swift in Sources */,
 				2FF1F30C2B949A0E002BDF85 /* SharecordApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
