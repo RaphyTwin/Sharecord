@@ -6,7 +6,6 @@ Sharecord is an easy to use tool to share code wrapped in a text file with just 
 ## Installation
 
 Downlaod the [DMG File]() and drag it into the Applications folder.
-Yep it's just that simple.
 
 ## Usage
 
