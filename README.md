@@ -3,7 +3,8 @@
   # Sharecord 
   *Comfort to a next level*
 
-  ![GitHub Release](https://img.shields.io/github/v/release/RaphyTwin/Sharecord?style=for-the-badge)
+  ![GitHub Release](https://img.shields.io/github/v/release/RaphyTwin/Sharecord?sort=date&display_name=release&style=for-the-badge)
+
 
 </div>
 
