@@ -9,18 +9,7 @@ Downlaod the [DMG File]() and drag it into the Applications folder.
 
 ## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+Coming soon...
 
 ## Contributing
 
@@ -31,4 +20,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[GPL](https://www.gnu.org/licenses/gpl-3.0.html)
