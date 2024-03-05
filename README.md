@@ -19,6 +19,7 @@ Sharecord is an easy to use tool to share code wrapped in a text file with just 
 
 ## Table of Contents
 
+- [Motivation](#motivation)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
