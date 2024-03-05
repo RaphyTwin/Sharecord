@@ -25,6 +25,10 @@ Sharecord is an easy to use tool to share code wrapped in a text file with just 
 - [Contributing](#contributing)
 - [License](#license)
 
+## Motivation
+
+Most coders are very annoyed about the limit of a normal discord message. So there are two solutions
+
 ## Installation
 
 Downlaod the [DMG File]() and drag it into the Applications folder.
