@@ -32,7 +32,9 @@ Most coders are very annoyed about the limit of a normal discord message. So the
 
 ## Mission
 
-It is our commitment to keep CodeEdit open source and free forever, supported by the community.
+It is our commitment to keep Sharecord open source and free forever, supported by the community.
+
+We strive to remain true to Apple's human interface guidelines and development patterns, ensuring Sharecord looks and feels like an application developed by Apple themselves, which includes a meticulous attention to detail.
 
 ## Installation
 
