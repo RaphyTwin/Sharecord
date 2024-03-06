@@ -16,14 +16,7 @@ Please read the [Getting Started](https://github.com/CodeEditApp/CodeEdit/wiki/G
 
 Once you are happy with your changes, submit a `Pull Request`.
 
-The pull request opens with a template loaded. Fill out all fields that are relevant.
-
-The `PR` should include following information:
-* A descriptive **title** on what changed.
-* A detailed **description** of changes.
-* If you made changes to the UI please add a **screenshot** or **video** as well.
-* If there is a related issue please add a **reference to the issue**. If not, create one beforehand and link it.
-* If your PR is still in progress mark it as **Draft**.
+Please provide a detailed description of your changes in your PR. If your commits contain UI changes, we ask that you provide screenshots.
 
 ### Checks, Tests & Documentation
 
