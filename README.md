@@ -6,8 +6,6 @@
   ![GitHub Release](https://img.shields.io/github/v/release/RaphyTwin/Sharecord?sort=date&display_name=release&style=for-the-badge)
   ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RaphyTwin/Sharecord/total?style=for-the-badge)
 
-
-
 </div>
 
 ---
@@ -51,9 +49,8 @@ Coming soon...
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Be part of the next revolution in code editing by contributing to the project. This is a community-led effort, so we welcome as many contributors who can help. Read the [Contribution Guide](https://github.com/CodeEditApp/CodeEdit/blob/main/CONTRIBUTING.md) for more information.
 
-Please make sure to update tests as appropriate.
 
 ## License
 
