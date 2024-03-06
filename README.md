@@ -36,6 +36,10 @@ It is our commitment to keep Sharecord open source and free forever, supported b
 
 We strive to remain true to Apple's human interface guidelines and development patterns, ensuring Sharecord looks and feels like an application developed by Apple themselves, which includes a meticulous attention to detail.
 
+## Community
+
+Join our growing community on [GitHub Discussions](https://github.com/orgs/CodeEditApp/discussions) where we discuss and collaborate on all things Sharecord. Don't be shy, jump right in and be part of the discussion!
+
 ## Installation
 
 Downlaod the [DMG File]() and drag it into the Applications folder.
