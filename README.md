@@ -38,7 +38,7 @@ We strive to remain true to Apple's human interface guidelines and development p
 
 ## Community
 
-Join our growing community on [GitHub Discussions](https://github.com/orgs/CodeEditApp/discussions) where we discuss and collaborate on all things Sharecord. Don't be shy, jump right in and be part of the discussion!
+Join our growing community on [GitHub Discussions](https://github.com/RaphyTwin/Sharecord/discussions) where we discuss and collaborate on all things Sharecord. Don't be shy, jump right in and be part of the discussion!
 
 ## Installation
 
