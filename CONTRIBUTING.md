@@ -10,7 +10,7 @@ Find issues from the [Issues tab](https://github.com/RaphyTwin/Sharecord/issues)
 
 ## Getting Started
 
-Please read the [Getting Started](https://github.com/CodeEditApp/CodeEdit/wiki/Getting-Started) guide in our wiki.
+Please read the [Getting Started](https://github.com/RaphyTwin/Sharecord/wiki/Getting-Started) guide in our wiki.
 
 ## Pull Request
 
