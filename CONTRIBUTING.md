@@ -1,6 +1,6 @@
-# Contribute to CodeEdit
+# Contribute to Sharecord
 
-## Fork & Clone CodeEdit
+## Fork & Clone Sharecord
 
 Tap the **"Fork"** button on the top of the site. After forking clone the forked repository to your Mac.
 
