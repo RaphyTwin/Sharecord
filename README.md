@@ -20,6 +20,7 @@ Sharecord is an easy to use tool to share code wrapped in a text file with just 
 ## Table of Contents
 
 - [Motivation](#motivation)
+- [Mission](#mission)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -28,6 +29,10 @@ Sharecord is an easy to use tool to share code wrapped in a text file with just 
 ## Motivation
 
 Most coders are very annoyed about the limit of a normal discord message. So there are two solutions. Either you buy Nitro or you write your code in a text file to avoid the limit. That's where Sharecord comes in: Normally you have to create a text file with TextEdit or any other program but that takes much time. With Sharecord you can easily copy the code and paste it get a text file created. Then you can easily share unlimited lines of code in just a few seconds.
+
+## Mission
+
+It is our commitment to keep CodeEdit open source and free forever, supported by the community.
 
 ## Installation
 
