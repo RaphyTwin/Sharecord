@@ -36,10 +36,6 @@ It is our commitment to keep Sharecord open source and free forever, supported b
 
 We strive to remain true to Apple's human interface guidelines and development patterns, ensuring Sharecord looks and feels like an application developed by Apple themselves, which includes a meticulous attention to detail.
 
-## Activity
-
-<img src="https://repobeats.axiom.co/api/embed/acd5eeb654fc98f6ffbce26b09fd0e3603edf1fd.svg" alt="Sharecord Repository Activity" width="100%" />
-
 ## Installation
 
 Downlaod the [DMG File]() and drag it into the Applications folder.
