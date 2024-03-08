@@ -6,7 +6,7 @@
   ![GitHub Release](https://img.shields.io/github/v/release/RaphyTwin/Sharecord?sort=date&display_name=release&style=for-the-badge)
   ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RaphyTwin/Sharecord/total?style=for-the-badge)
 
-  <img width="650" alt="SharecordMenuBar" src="">
+  <img width="650" alt="SharecordMenuBar" src="https://github.com/RaphyTwin/Sharecord/blob/8684111e5125b2e4d789012e474c6e4c86f2c77c/images/SharecordMenuBar.png">
 
 </div>
 
