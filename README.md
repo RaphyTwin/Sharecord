@@ -53,4 +53,4 @@ Be part of the next revolution in code editing by contributing to the project. T
 
 ## License
 
-Licensed under the [MIT License]().
+Licensed under the [MIT License](https://opensource.org/license/mit).
