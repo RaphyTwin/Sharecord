@@ -37,7 +37,7 @@
       "localizations" : {
         "de" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "© 2024 RaphyTwin"
           }
         },
@@ -49,13 +49,13 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "© 2024 RaphyTwin"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "© 2024 RaphyTwin"
           }
         }
