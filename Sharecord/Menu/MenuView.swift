@@ -16,16 +16,12 @@ struct MenuView: View {
                     .padding(.vertical)
                     .frame(width: 200)
             }
-            .buttonStyle(.borderedProminent)
-            .tint(.accentColor)
             Button {
             } label: {
                 Text("Create blank File")
                     .padding(.vertical)
                     .frame(width: 200)
             }
-            .buttonStyle(.borderedProminent)
-            .tint(.accentColor)
             Button {
                 NSApplication.shared.terminate(nil)
             } label: {
