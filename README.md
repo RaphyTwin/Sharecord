@@ -53,4 +53,4 @@ Be part of the next revolution in code editing by contributing to the project. T
 
 ## License
 
-Licensed under the [GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html).
+Licensed under the [MIT License]().
