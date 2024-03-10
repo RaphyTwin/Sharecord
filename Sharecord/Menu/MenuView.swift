@@ -22,15 +22,6 @@ struct MenuView: View {
                     .padding(.vertical)
                     .frame(width: 200)
             }
-            Button {
-                NSApplication.shared.terminate(nil)
-            } label: {
-                Text("Quit")
-                    .foregroundStyle(Color.red)
-                    .padding(.vertical)
-                    .frame(width: 200)
-            }
-            .padding(.top)
         }
         .padding()
         .controlSize(.extraLarge)
@@ -41,6 +32,6 @@ struct MenuView: View {
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
         MenuView()
-            .frame(width: 250, height: 250)
+            .frame(width: 250, height: 150)
     }
 }
