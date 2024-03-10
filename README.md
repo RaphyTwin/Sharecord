@@ -10,8 +10,6 @@
 
 </div>
 
----
-
 Do you want to share longer code on Discord without having to buy nitro?
 Sharecord is an easy to use tool to share code wrapped in a text file with just a few clicks.
 
