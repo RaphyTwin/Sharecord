@@ -12,13 +12,13 @@ struct MenuView: View {
         VStack(alignment: .leading) {
             Button {
             } label: {
-                Text("Create File from clipboard")
+                Text("Create file from clipboard")
                     .padding(.vertical)
                     .frame(width: 200)
             }
             Button {
             } label: {
-                Text("Create blank File")
+                Text("Create blank file")
                     .padding(.vertical)
                     .frame(width: 200)
             }
