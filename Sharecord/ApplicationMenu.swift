@@ -21,10 +21,10 @@ class ApplicationMenu: NSObject {
         let aboutMenuItem = NSMenuItem(title: "About Sharecord", action: #selector(about), keyEquivalent: "")
         aboutMenuItem.target = self
         menu.addItem(aboutMenuItem)
-        let settingsMenuItem = NSMenuItem(title: "Settings", action: #selector(settings), keyEquivalent: ",")
+        let settingsMenuItem = NSMenuItem(title: "Settings...", action: #selector(settings), keyEquivalent: ",")
         settingsMenuItem.target = self
         menu.addItem(settingsMenuItem)
-        let quitMenuItem = NSMenuItem(title: "Quit", action: #selector(quit), keyEquivalent: "q")
+        let quitMenuItem = NSMenuItem(title: "Quit Sharecord", action: #selector(quit), keyEquivalent: "q")
         quitMenuItem.target = self
         menu.addItem(quitMenuItem)
         return menu
