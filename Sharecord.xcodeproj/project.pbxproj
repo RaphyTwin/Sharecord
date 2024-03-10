@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2FB9DA162B9E0FF400811848 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DA152B9E0FF400811848 /* ApplicationMenu.swift */; };
+		2FB9DA182B9E1E8400811848 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DA172B9E1E8400811848 /* SettingsView.swift */; };
+		2FB9DA1A2B9E1F3D00811848 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DA192B9E1F3D00811848 /* GeneralSettingsView.swift */; };
 		2FF1F30C2B949A0E002BDF85 /* SharecordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1F30B2B949A0E002BDF85 /* SharecordApp.swift */; };
 		2FF1F3102B949A0F002BDF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF1F30F2B949A0F002BDF85 /* Assets.xcassets */; };
 		2FF1F3132B949A0F002BDF85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF1F3122B949A0F002BDF85 /* Preview Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		2FB9DA152B9E0FF400811848 /* ApplicationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenu.swift; sourceTree = "<group>"; };
+		2FB9DA172B9E1E8400811848 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2FB9DA192B9E1F3D00811848 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
 		2FF1F3082B949A0E002BDF85 /* Sharecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF1F30B2B949A0E002BDF85 /* SharecordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharecordApp.swift; sourceTree = "<group>"; };
 		2FF1F30F2B949A0F002BDF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				2FF1F3142B949A0F002BDF85 /* Sharecord.entitlements */,
 				2FF1F3112B949A0F002BDF85 /* Preview Content */,
 				2FB9DA152B9E0FF400811848 /* ApplicationMenu.swift */,
+				2FB9DA172B9E1E8400811848 /* SettingsView.swift */,
+				2FB9DA192B9E1F3D00811848 /* GeneralSettingsView.swift */,
 			);
 			path = Sharecord;
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FB9DA162B9E0FF400811848 /* ApplicationMenu.swift in Sources */,
+				2FB9DA1A2B9E1F3D00811848 /* GeneralSettingsView.swift in Sources */,
+				2FB9DA182B9E1E8400811848 /* SettingsView.swift in Sources */,
 				2FF1F31C2B949DE3002BDF85 /* MenuView.swift in Sources */,
 				2FF1F30C2B949A0E002BDF85 /* SharecordApp.swift in Sources */,
 			);

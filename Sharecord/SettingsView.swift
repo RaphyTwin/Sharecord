@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct SettingsView: View {
+    private enum Tabs: Hashable {
+        case general
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            GeneralSettingsView()
+                .tabItem {
+                    Label("General", systemImage: "gear")
+                }
+                .tag(Tabs.general)
+        }
+        .padding(20)
+        .frame(width: 375, height: 150)
     }
 }
 
