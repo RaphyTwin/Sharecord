@@ -10,38 +10,21 @@ import SwiftUI
 @main
 struct SharecordApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self)
-    var delegate
+    var appDelegate
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView()
         }
     }
 }
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-    var statusItem: NSStatusItem?
-    var popOver = NSPopover()
+    private(set) static var instance: AppDelegate!
+    lazy var statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    let menu = ApplicationMenu()
     func applicationDidFinishLaunching(_ notification: Notification) {
-        let menuView = MenuView()
-        popOver.behavior = .transient
-        popOver.animates = true
-        popOver.contentViewController = NSViewController()
-        popOver.contentViewController?.view = NSHostingView(rootView: menuView)
-        popOver.contentViewController?.view.window?.makeKey()
-        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        if let menuButton = statusItem?.button {
-            menuButton.image = NSImage(systemSymbolName: "doc.text.fill", accessibilityDescription: nil)
-            menuButton.action = #selector(menuButtonToggle)
-        }
-    }
-    @objc
-    func menuButtonToggle(sender: AnyObject) {
-        if popOver.isShown {
-            popOver.performClose(sender)
-        } else {
-            if let menuButton = statusItem?.button {
-                self.popOver.show(relativeTo: menuButton.bounds, of: menuButton, preferredEdge: NSRectEdge.minY)
-            }
-        }
+        AppDelegate.instance = self
+        statusBarItem.button?.image = NSImage(systemSymbolName: "doc.text.fill", accessibilityDescription: nil)
+        statusBarItem.menu = menu.createMenu()
     }
 }
