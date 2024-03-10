@@ -33,7 +33,6 @@ struct MenuView: View {
             .padding(.top)
         }
         .padding()
-        .frame(width: 250, height: 250)
         .controlSize(.extraLarge)
         .clipShape(RoundedRectangle(cornerRadius: 25.0))
     }
@@ -42,5 +41,6 @@ struct MenuView: View {
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
         MenuView()
+            .frame(width: 250, height: 250)
     }
 }
