@@ -21,7 +21,7 @@ class ApplicationMenu: NSObject {
         let aboutMenuItem = NSMenuItem(title: "About Sharecord", action: #selector(about), keyEquivalent: "")
         aboutMenuItem.target = self
         menu.addItem(aboutMenuItem)
-        let settingsMenuItem = NSMenuItem(title: "Settings...", action: #selector(settings), keyEquivalent: ",")
+        let settingsMenuItem = NSMenuItem(title: "Settings...", action: #selector(preferences), keyEquivalent: ",")
         settingsMenuItem.target = self
         menu.addItem(settingsMenuItem)
         let quitMenuItem = NSMenuItem(title: "Quit Sharecord", action: #selector(quit), keyEquivalent: "q")
@@ -31,11 +31,13 @@ class ApplicationMenu: NSObject {
     }
     @objc
     func about(sender: NSMenuItem) {
+        NSApp.activate(ignoringOtherApps: true)
         NSApp.orderFrontStandardAboutPanel()
     }
     @objc
-    func settings(sender: NSMenuItem) {
-        NSApp.orderFrontStandardAboutPanel()
+    func preferences(sender: NSMenuItem) {
+        NSApp.activate(ignoringOtherApps: true)
+        // The code to open the SettingsScreen
     }
     @objc
     func quit(sender: NSMenuItem) {
