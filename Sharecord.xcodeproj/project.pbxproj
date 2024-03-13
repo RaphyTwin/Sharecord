@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FA88FF72BA222CE00D46669 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA88FF62BA222CE00D46669 /* LaunchAtLogin */; };
 		2FB9DA162B9E0FF400811848 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DA152B9E0FF400811848 /* ApplicationMenu.swift */; };
 		2FB9DA182B9E1E8400811848 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DA172B9E1E8400811848 /* SettingsView.swift */; };
 		2FB9DA1A2B9E1F3D00811848 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DA192B9E1F3D00811848 /* GeneralSettingsView.swift */; };
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA88FF72BA222CE00D46669 /* LaunchAtLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +105,9 @@
 			dependencies = (
 			);
 			name = Sharecord;
+			packageProductDependencies = (
+				2FA88FF62BA222CE00D46669 /* LaunchAtLogin */,
+			);
 			productName = Sharecord;
 			productReference = 2FF1F3082B949A0E002BDF85 /* Sharecord.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 2FF1F2FF2B949A0E002BDF85;
+			packageReferences = (
+				2FA88FF52BA222CE00D46669 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+			);
 			productRefGroup = 2FF1F3092B949A0E002BDF85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -384,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FA88FF52BA222CE00D46669 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FA88FF62BA222CE00D46669 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FA88FF52BA222CE00D46669 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2FF1F3002B949A0E002BDF85 /* Project object */;
 }

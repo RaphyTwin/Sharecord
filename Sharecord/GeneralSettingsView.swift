@@ -6,21 +6,14 @@
 //
 
 import SwiftUI
-import ServiceManagement
+import LaunchAtLogin
 
 struct GeneralSettingsView: View {
     @AppStorage("launchAtLogin") private
     var launchAtLogin = true
     var body: some View {
         Form {
-            Toggle("Auto start", isOn: $launchAtLogin)
-                .onChange(of: launchAtLogin) {
-                    if launchAtLogin {
-                        try? SMAppService().register()
-                    } else {
-                        try? SMAppService().unregister()
-                    }
-                }
+            LaunchAtLogin.Toggle()
         }
         .padding(20)
         .frame(width: 350, height: 100)
