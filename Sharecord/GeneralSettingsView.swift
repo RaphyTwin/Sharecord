@@ -14,7 +14,7 @@ struct GeneralSettingsView: View {
     var body: some View {
         Form {
             Toggle("Auto start", isOn: $launchAtLogin)
-                .onChange(of: launchAtLogin) { _ in
+                .onChange(of: launchAtLogin) {
                     if launchAtLogin {
                         try? SMAppService().register()
                     } else {

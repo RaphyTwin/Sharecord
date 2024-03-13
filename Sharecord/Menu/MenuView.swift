@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct MenuView: View {
+    @State private var emptyText: String = ""
     var body: some View {
         VStack(alignment: .leading) {
             Button {
@@ -17,6 +19,9 @@ struct MenuView: View {
                     .frame(width: 200)
             }
             Button {
+                NSApp.activate(ignoringOtherApps: true)
+                let saveURL = showSavePanel()
+                writeText(to: saveURL)
             } label: {
                 Text("Create blank file")
                     .padding(.vertical)
@@ -26,6 +31,31 @@ struct MenuView: View {
         .padding()
         .controlSize(.extraLarge)
         .clipShape(RoundedRectangle(cornerRadius: 25.0))
+    }
+    private let txt: UTType
+        init() {
+            guard let type = UTType(tag: "txt", tagClass: .filenameExtension, conformingTo: .compositeContent)
+            else {
+                fatalError()
+            }
+            txt = type
+        }
+    func showSavePanel() -> URL? {
+        let savePanel = NSSavePanel()
+        savePanel.title = "Save"
+        savePanel.nameFieldLabel = "Save As:"
+        savePanel.nameFieldStringValue = "Code"
+        savePanel.prompt = "Save"
+        savePanel.allowedContentTypes = [txt]
+        savePanel.isExtensionHidden = true
+        savePanel.canCreateDirectories = true
+        savePanel.allowsOtherFileTypes = false
+        let response = savePanel.runModal()
+        return response == .OK ? savePanel.url : nil
+    }
+    func writeText(to url: URL?) {
+        guard let url = url else { return }
+        try? emptyText.write(to: url, atomically: true, encoding: .utf8)
     }
 }
 
