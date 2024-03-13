@@ -43,9 +43,9 @@ struct MenuView: View {
     func showSavePanel() -> URL? {
         let savePanel = NSSavePanel()
         savePanel.title = "Save"
-        savePanel.nameFieldLabel = "Save As:"
-        savePanel.nameFieldStringValue = "Code"
         savePanel.prompt = "Save"
+        savePanel.nameFieldLabel = "Save As:"
+        savePanel.nameFieldStringValue = "code"
         savePanel.allowedContentTypes = [txt]
         savePanel.isExtensionHidden = true
         savePanel.canCreateDirectories = true
