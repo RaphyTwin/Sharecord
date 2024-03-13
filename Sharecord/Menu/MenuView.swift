@@ -10,9 +10,13 @@ import UniformTypeIdentifiers
 
 struct MenuView: View {
     @State private var emptyText: String = ""
+    @State private var clipboardContent: String = ""
     var body: some View {
         VStack(alignment: .leading) {
             Button {
+                NSApp.activate(ignoringOtherApps: true)
+                let saveURL = showSavePanel()
+                writeTextfromClipboard(to: saveURL)
             } label: {
                 Text("Create file from clipboard")
                     .padding(.vertical)
@@ -56,6 +60,10 @@ struct MenuView: View {
     func writeText(to url: URL?) {
         guard let url = url else { return }
         try? emptyText.write(to: url, atomically: true, encoding: .utf8)
+    }
+    func writeTextfromClipboard(to url: URL?) {
+        guard let url = url else { return }
+        try? clipboardContent.write(to: url, atomically: true, encoding: .utf8)
     }
 }
 
