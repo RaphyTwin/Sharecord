@@ -23,6 +23,7 @@ Sharecord is an easy to use tool to share code wrapped in a text file with just 
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
+- [Credits](#credits)
 - [License](#license)
 
 ## Motivation
@@ -48,6 +49,10 @@ Coming soon...
 Be part of the next revolution in code editing by contributing to the project. This is a community-led effort, so we welcome as many contributors who can help. Read the [Contribution Guide](https://github.com/RaphyTwin/Sharecord/blob/main/CONTRIBUTING.md) for more information.
 
 ## Contributors
+
+## Credits
+
+- This project makes use of [LaunchAtLogin](https://github.com/sindresorhus/LaunchAtLogin-Modern)
 
 ## License
 
