@@ -5,7 +5,6 @@
 //  Created by Raphy on 10.03.24.
 //
 
-import Foundation
 import SwiftUI
 
 class ApplicationMenu: NSObject {
