@@ -1,4 +1,5 @@
 {
+  "originHash" : "4e792f96f66d9e8996ebe8d992d48851a2ecd58ef362dcc6ecfde3fef02688d5",
   "pins" : [
     {
       "identity" : "launchatlogin-modern",
@@ -8,7 +9,16 @@
         "branch" : "main",
         "revision" : "a04ec1c363be3627734f6dad757d82f5d4fa8fcc"
       }
+    },
+    {
+      "identity" : "settingsaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/SettingsAccess",
+      "state" : {
+        "revision" : "0fd73c8b5892e88acb13adb7f36a4ba9293a0061",
+        "version" : "1.4.0"
+      }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
