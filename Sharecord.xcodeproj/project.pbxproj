@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F686F422BEE847F00061172 /* SettingsAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 2F686F412BEE847F00061172 /* SettingsAccess */; };
 		2FA88FF72BA222CE00D46669 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA88FF62BA222CE00D46669 /* LaunchAtLogin */; };
 		2FA88FFB2BA3551300D46669 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2FA88FFA2BA3551300D46669 /* Credits.rtf */; };
 		2FB9DA162B9E0FF400811848 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DA152B9E0FF400811848 /* ApplicationMenu.swift */; };
@@ -38,7 +37,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA88FF72BA222CE00D46669 /* LaunchAtLogin in Frameworks */,
-				2F686F422BEE847F00061172 /* SettingsAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +110,6 @@
 			name = Sharecord;
 			packageProductDependencies = (
 				2FA88FF62BA222CE00D46669 /* LaunchAtLogin */,
-				2F686F412BEE847F00061172 /* SettingsAccess */,
 			);
 			productName = Sharecord;
 			productReference = 2FF1F3082B949A0E002BDF85 /* Sharecord.app */;
@@ -144,7 +141,6 @@
 			mainGroup = 2FF1F2FF2B949A0E002BDF85;
 			packageReferences = (
 				2FA88FF52BA222CE00D46669 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
-				2F686F402BEE847F00061172 /* XCRemoteSwiftPackageReference "SettingsAccess" */,
 			);
 			productRefGroup = 2FF1F3092B949A0E002BDF85 /* Products */;
 			projectDirPath = "";
@@ -402,14 +398,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2F686F402BEE847F00061172 /* XCRemoteSwiftPackageReference "SettingsAccess" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/orchetect/SettingsAccess";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.0;
-			};
-		};
 		2FA88FF52BA222CE00D46669 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
@@ -421,11 +409,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2F686F412BEE847F00061172 /* SettingsAccess */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2F686F402BEE847F00061172 /* XCRemoteSwiftPackageReference "SettingsAccess" */;
-			productName = SettingsAccess;
-		};
 		2FA88FF62BA222CE00D46669 /* LaunchAtLogin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2FA88FF52BA222CE00D46669 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
