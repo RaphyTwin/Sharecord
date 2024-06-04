@@ -53,6 +53,7 @@ Be part of the next revolution in code editing by contributing to the project. T
 ## Credits
 
 - This project makes use of [LaunchAtLogin](https://github.com/sindresorhus/LaunchAtLogin-Modern)
+- This project makes use of [SettingsAccess](https://github.com/orchetect/SettingsAccess)
 
 ## License
 
