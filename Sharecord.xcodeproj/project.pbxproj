@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		2FA88FF72BA222CE00D46669 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA88FF62BA222CE00D46669 /* LaunchAtLogin */; };
 		2FA88FFB2BA3551300D46669 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2FA88FFA2BA3551300D46669 /* Credits.rtf */; };
-		2FB9DA162B9E0FF400811848 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DA152B9E0FF400811848 /* ApplicationMenu.swift */; };
-		2FB9DA182B9E1E8400811848 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DA172B9E1E8400811848 /* SettingsView.swift */; };
-		2FB9DA1A2B9E1F3D00811848 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9DA192B9E1F3D00811848 /* GeneralSettingsView.swift */; };
+		2FAEDC352C10C2F900518930 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 2FAEDC342C10C2F900518930 /* KeyboardShortcuts */; };
+		2FAEDC382C10C30000518930 /* SettingsAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 2FAEDC372C10C30000518930 /* SettingsAccess */; };
+		2FAEDC3C2C10C3C400518930 /* KeyboardShortcuts+Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEDC3B2C10C3C400518930 /* KeyboardShortcuts+Global.swift */; };
+		2FAEDC3F2C10C40100518930 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEDC3E2C10C40100518930 /* GeneralSettingsView.swift */; };
+		2FAEDC412C10C42A00518930 /* KeyBindingsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEDC402C10C42A00518930 /* KeyBindingsSettingsView.swift */; };
+		2FAEDC432C10C44B00518930 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEDC422C10C44B00518930 /* SettingsView.swift */; };
+		2FAEDC482C10C52800518930 /* FileCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEDC472C10C52800518930 /* FileCreationViewModel.swift */; };
 		2FF1F30C2B949A0E002BDF85 /* SharecordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1F30B2B949A0E002BDF85 /* SharecordApp.swift */; };
 		2FF1F3102B949A0F002BDF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF1F30F2B949A0F002BDF85 /* Assets.xcassets */; };
 		2FF1F3132B949A0F002BDF85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF1F3122B949A0F002BDF85 /* Preview Assets.xcassets */; };
@@ -20,9 +24,11 @@
 
 /* Begin PBXFileReference section */
 		2FA88FFA2BA3551300D46669 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
-		2FB9DA152B9E0FF400811848 /* ApplicationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenu.swift; sourceTree = "<group>"; };
-		2FB9DA172B9E1E8400811848 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		2FB9DA192B9E1F3D00811848 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
+		2FAEDC3B2C10C3C400518930 /* KeyboardShortcuts+Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardShortcuts+Global.swift"; sourceTree = "<group>"; };
+		2FAEDC3E2C10C40100518930 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
+		2FAEDC402C10C42A00518930 /* KeyBindingsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBindingsSettingsView.swift; sourceTree = "<group>"; };
+		2FAEDC422C10C44B00518930 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2FAEDC472C10C52800518930 /* FileCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCreationViewModel.swift; sourceTree = "<group>"; };
 		2FF1F3082B949A0E002BDF85 /* Sharecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF1F30B2B949A0E002BDF85 /* SharecordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharecordApp.swift; sourceTree = "<group>"; };
 		2FF1F30F2B949A0F002BDF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,13 +42,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FAEDC382C10C30000518930 /* SettingsAccess in Frameworks */,
 				2FA88FF72BA222CE00D46669 /* LaunchAtLogin in Frameworks */,
+				2FAEDC352C10C2F900518930 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FAEDC3A2C10C3B300518930 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FAEDC3B2C10C3C400518930 /* KeyboardShortcuts+Global.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FAEDC3D2C10C3EA00518930 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2FAEDC3E2C10C40100518930 /* GeneralSettingsView.swift */,
+				2FAEDC402C10C42A00518930 /* KeyBindingsSettingsView.swift */,
+				2FAEDC422C10C44B00518930 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2FAEDC442C10C4AF00518930 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2FAEDC472C10C52800518930 /* FileCreationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		2FF1F2FF2B949A0E002BDF85 = {
 			isa = PBXGroup;
 			children = (
@@ -62,14 +96,14 @@
 		2FF1F30A2B949A0E002BDF85 /* Sharecord */ = {
 			isa = PBXGroup;
 			children = (
+				2FAEDC442C10C4AF00518930 /* ViewModel */,
+				2FAEDC3D2C10C3EA00518930 /* Settings */,
+				2FAEDC3A2C10C3B300518930 /* Model */,
 				2FF1F31A2B949DC8002BDF85 /* Menu */,
 				2FF1F30B2B949A0E002BDF85 /* SharecordApp.swift */,
 				2FF1F30F2B949A0F002BDF85 /* Assets.xcassets */,
 				2FF1F3142B949A0F002BDF85 /* Sharecord.entitlements */,
 				2FF1F3112B949A0F002BDF85 /* Preview Content */,
-				2FB9DA152B9E0FF400811848 /* ApplicationMenu.swift */,
-				2FB9DA172B9E1E8400811848 /* SettingsView.swift */,
-				2FB9DA192B9E1F3D00811848 /* GeneralSettingsView.swift */,
 				2FA88FFA2BA3551300D46669 /* Credits.rtf */,
 			);
 			path = Sharecord;
@@ -110,6 +144,8 @@
 			name = Sharecord;
 			packageProductDependencies = (
 				2FA88FF62BA222CE00D46669 /* LaunchAtLogin */,
+				2FAEDC342C10C2F900518930 /* KeyboardShortcuts */,
+				2FAEDC372C10C30000518930 /* SettingsAccess */,
 			);
 			productName = Sharecord;
 			productReference = 2FF1F3082B949A0E002BDF85 /* Sharecord.app */;
@@ -141,6 +177,8 @@
 			mainGroup = 2FF1F2FF2B949A0E002BDF85;
 			packageReferences = (
 				2FA88FF52BA222CE00D46669 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+				2FAEDC332C10C2F900518930 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				2FAEDC362C10C30000518930 /* XCRemoteSwiftPackageReference "SettingsAccess" */,
 			);
 			productRefGroup = 2FF1F3092B949A0E002BDF85 /* Products */;
 			projectDirPath = "";
@@ -189,11 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB9DA162B9E0FF400811848 /* ApplicationMenu.swift in Sources */,
-				2FB9DA1A2B9E1F3D00811848 /* GeneralSettingsView.swift in Sources */,
-				2FB9DA182B9E1E8400811848 /* SettingsView.swift in Sources */,
+				2FAEDC3C2C10C3C400518930 /* KeyboardShortcuts+Global.swift in Sources */,
 				2FF1F31C2B949DE3002BDF85 /* MenuView.swift in Sources */,
+				2FAEDC412C10C42A00518930 /* KeyBindingsSettingsView.swift in Sources */,
+				2FAEDC432C10C44B00518930 /* SettingsView.swift in Sources */,
+				2FAEDC3F2C10C40100518930 /* GeneralSettingsView.swift in Sources */,
 				2FF1F30C2B949A0E002BDF85 /* SharecordApp.swift in Sources */,
+				2FAEDC482C10C52800518930 /* FileCreationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +446,22 @@
 				kind = branch;
 			};
 		};
+		2FAEDC332C10C2F900518930 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+		2FAEDC362C10C30000518930 /* XCRemoteSwiftPackageReference "SettingsAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/SettingsAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -413,6 +469,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2FA88FF52BA222CE00D46669 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
 			productName = LaunchAtLogin;
+		};
+		2FAEDC342C10C2F900518930 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FAEDC332C10C2F900518930 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		2FAEDC372C10C30000518930 /* SettingsAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FAEDC362C10C30000518930 /* XCRemoteSwiftPackageReference "SettingsAccess" */;
+			productName = SettingsAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

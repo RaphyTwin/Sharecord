@@ -7,63 +7,41 @@
 
 import SwiftUI
 import UniformTypeIdentifiers
+import SettingsAccess
+import KeyboardShortcuts
 
 struct MenuView: View {
-    @State private var emptyText: String = ""
-    @State private var clipboardContent: String = ""
+    @State var viewModel = FileCreationViewModel()
     var body: some View {
         VStack(alignment: .leading) {
             Button {
-                NSApp.activate(ignoringOtherApps: true)
-                let saveURL = showSavePanel()
-                writeTextfromClipboard(to: saveURL)
+                viewModel.createFileFromClipboardButton()
             } label: {
                 Text("Create file from clipboard")
-                    .padding(.vertical)
-                    .frame(width: 200)
             }
             Button {
-                NSApp.activate(ignoringOtherApps: true)
-                let saveURL = showSavePanel()
-                writeText(to: saveURL)
+                viewModel.createBlankFileButton()
             } label: {
                 Text("Create blank file")
-                    .padding(.vertical)
-                    .frame(width: 200)
             }
-        }
-        .padding()
-        .controlSize(.extraLarge)
-        .clipShape(RoundedRectangle(cornerRadius: 25.0))
-    }
-    private let txt: UTType
-        init() {
-            guard let type = UTType(tag: "txt", tagClass: .filenameExtension, conformingTo: .compositeContent)
-            else {
-                fatalError()
+            Divider()
+            Button("About Sharecord") {
+                NSApp.activate(ignoringOtherApps: true)
+                NSApp.orderFrontStandardAboutPanel()
             }
-            txt = type
+            SettingsLink {
+                Text("Settings...")
+            } preAction: {
+                NSApp.activate(ignoringOtherApps: true)
+            } postAction: {
+                NSApp.activate(ignoringOtherApps: true)
+            }
+            .keyboardShortcut(",", modifiers: [.command])
+            Button("Quit Sharecord") {
+                NSApp.terminate(self)
+            }
+            .keyboardShortcut("q", modifiers: [.command])
         }
-    func showSavePanel() -> URL? {
-        let savePanel = NSSavePanel()
-        savePanel.title = "Save"
-        savePanel.prompt = "Save"
-        savePanel.nameFieldLabel = "Save As:"
-        savePanel.nameFieldStringValue = "code"
-        savePanel.allowedContentTypes = [txt]
-        savePanel.isExtensionHidden = true
-        savePanel.canCreateDirectories = true
-        savePanel.allowsOtherFileTypes = false
-        let response = savePanel.runModal()
-        return response == .OK ? savePanel.url : nil
-    }
-    func writeText(to url: URL?) {
-        guard let url = url else { return }
-        try? emptyText.write(to: url, atomically: true, encoding: .utf8)
-    }
-    func writeTextfromClipboard(to url: URL?) {
-        guard let url = url else { return }
-        try? clipboardContent.write(to: url, atomically: true, encoding: .utf8)
     }
 }
 
