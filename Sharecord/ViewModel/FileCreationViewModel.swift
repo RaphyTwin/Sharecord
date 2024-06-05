@@ -1,5 +1,5 @@
 //
-//  GeneralSettingsView.swift
+//  FileCreationViewModel.swift
 //  Sharecord
 //
 //  Created by Raphy on 05.06.24.
