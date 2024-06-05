@@ -14,15 +14,11 @@ struct MenuView: View {
     @State var viewModel = FileCreationViewModel()
     var body: some View {
         VStack(alignment: .leading) {
-            Button {
+            Button("Create file from clipboard") {
                 viewModel.createFileFromClipboardButton()
-            } label: {
-                Text("Create file from clipboard")
             }
-            Button {
+            Button("Create blank file") {
                 viewModel.createBlankFileButton()
-            } label: {
-                Text("Create blank file")
             }
             Divider()
             Button("About Sharecord") {
