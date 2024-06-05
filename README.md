@@ -20,7 +20,6 @@ Sharecord is an easy to use tool to share code wrapped in a text file with just 
 - [Motivation](#motivation)
 - [Mission](#mission)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
 - [Credits](#credits)
@@ -40,10 +39,6 @@ We strive to remain true to Apple's human interface guidelines and development p
 
 Downlaod the [DMG File]() and drag it into the Applications folder.
 
-## Usage
-
-Coming soon...
-
 ## Contributing
 
 Be part of the next revolution in code editing by contributing to the project. This is a community-led effort, so we welcome as many contributors who can help. Read the [Contribution Guide](https://github.com/RaphyTwin/Sharecord/blob/main/CONTRIBUTING.md) for more information.
@@ -54,6 +49,7 @@ Be part of the next revolution in code editing by contributing to the project. T
 
 - This project makes use of [LaunchAtLogin](https://github.com/sindresorhus/LaunchAtLogin-Modern)
 - This project makes use of [SettingsAccess](https://github.com/orchetect/SettingsAccess)
+- This project makes use of [KeyboardShortcuts](https://github.com/sindresorhus/KeyboardShortcuts)
 
 ## License
 
