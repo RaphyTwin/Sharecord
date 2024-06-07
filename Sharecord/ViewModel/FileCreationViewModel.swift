@@ -10,7 +10,6 @@ import UniformTypeIdentifiers
 
 class FileCreationViewModel: ObservableObject {
     @State private var emptyText: String = ""
-    @State private var clipboardContent: String = ""
     func createFileFromClipboardButton() {
         NSApp.activate(ignoringOtherApps: true)
         let saveURL = showSavePanel()
@@ -47,6 +46,7 @@ class FileCreationViewModel: ObservableObject {
         try? emptyText.write(to: url, atomically: true, encoding: .utf8)
     }
     func writeTextfromClipboard(to url: URL?) {
+        let clipboardContent: String = (NSPasteboard.general.string(forType: NSPasteboard.PasteboardType.string) ?? "")
         guard let url = url else { return }
         try? clipboardContent.write(to: url, atomically: true, encoding: .utf8)
     }

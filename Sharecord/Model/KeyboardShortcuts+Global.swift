@@ -9,6 +9,6 @@ import Foundation
 import KeyboardShortcuts
 
 extension KeyboardShortcuts.Name {
-    static let createFileClipboard = Self("createFileClipboard", default: .init(.c, modifiers: [.control, .option]))
-    static let createBlankFile = Self("createBlankFile", default: .init(.b, modifiers: [.control, .option]))
+    static let createFileClipboard = Self("createFileClipboard", default: .init(.c, modifiers: [.option, .command]))
+    static let createBlankFile = Self("createBlankFile", default: .init(.b, modifiers: [.option, .command]))
 }
