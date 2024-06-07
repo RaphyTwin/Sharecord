@@ -4,7 +4,8 @@
   *Comfort to a next level*
 
   ![GitHub Release](https://img.shields.io/github/v/release/RaphyTwin/Sharecord?sort=date&display_name=release&style=for-the-badge)
-  ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RaphyTwin/Sharecord/total?style=for-the-badge)
+  ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RaphyTwin/Sharecord/total?style=for-the-badge
+)
 
   <img width="650" alt="SharecordMenuBar" src="https://github.com/RaphyTwin/Sharecord/blob/a34c968b7b1007d652d3e4d0933857db355259f5/images/SharecordMenuBar.png">
 
