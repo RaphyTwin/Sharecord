@@ -37,7 +37,7 @@ We strive to remain true to Apple's human interface guidelines and development p
 
 ## Installation
 
-Downlaod the [DMG File]() and drag it into the Applications folder.
+Downlaod the [DMG File](https://github.com/RaphyTwin/Sharecord/releases/tag/latest) and drag it into the Applications folder.
 
 ## Contributing
 
