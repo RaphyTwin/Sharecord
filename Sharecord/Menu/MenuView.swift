@@ -14,11 +14,13 @@ struct MenuView: View {
     @State var viewModel = FileCreationViewModel()
     var body: some View {
         VStack(alignment: .leading) {
-            Button("Create file from clipboard") {
-                viewModel.createFileFromClipboardButton()
-            }
-            Button("Create blank file") {
-                viewModel.createBlankFileButton()
+            Group {
+                Button("Create file from clipboard") {
+                    self.viewModel.createFileFromClipboardButton()
+                }
+                Button("Create blank file") {
+                    self.viewModel.createBlankFileButton()
+                }
             }
             Divider()
             Button("About Sharecord") {
@@ -37,6 +39,14 @@ struct MenuView: View {
                 NSApp.terminate(self)
             }
             .keyboardShortcut("q", modifiers: [.command])
+        }
+    }
+    init() {
+        KeyboardShortcuts.onKeyUp(for: .createFileClipboard) { [self] in
+            self.viewModel.createFileFromClipboardButton()
+        }
+        KeyboardShortcuts.onKeyUp(for: .createBlankFile) { [self] in
+            self.viewModel.createBlankFileButton()
         }
     }
 }
