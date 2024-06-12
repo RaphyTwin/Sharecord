@@ -1,0 +1,33 @@
+{
+  "originHash" : "9f3705d1eb89145f85bf41d50116dad5e47cbd6a7e16f2d9362a1317b43c3a27",
+  "pins" : [
+    {
+      "identity" : "keyboardshortcuts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/KeyboardShortcuts",
+      "state" : {
+        "revision" : "2e5f15581fefb821d4b366e57d817be8bf12aa58",
+        "version" : "2.0.1"
+      }
+    },
+    {
+      "identity" : "launchatlogin-modern",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/LaunchAtLogin-Modern",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a04ec1c363be3627734f6dad757d82f5d4fa8fcc"
+      }
+    },
+    {
+      "identity" : "settingsaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/SettingsAccess",
+      "state" : {
+        "revision" : "0fd73c8b5892e88acb13adb7f36a4ba9293a0061",
+        "version" : "1.4.0"
+      }
+    }
+  ],
+  "version" : 3
+}

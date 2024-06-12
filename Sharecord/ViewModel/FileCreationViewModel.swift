@@ -9,7 +9,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 class FileCreationViewModel: ObservableObject {
-    @State private var emptyText: String = ""
+    @Published private var emptyText: String = ""
     func createFileFromClipboardButton() {
         NSApp.activate(ignoringOtherApps: true)
         let saveURL = showSavePanel()

@@ -11,7 +11,7 @@ import SettingsAccess
 import KeyboardShortcuts
 
 struct MenuView: View {
-    @State var viewModel = FileCreationViewModel()
+    @StateObject var viewModel = FileCreationViewModel()
     var body: some View {
         VStack(alignment: .leading) {
             Group {
