@@ -20,7 +20,6 @@ excluded:
 opt_in_rules:
   - attributes
   - empty_count
-  - closure_spacing
   - contains_over_first_not_nil
   - missing_docs
   - modifier_order
