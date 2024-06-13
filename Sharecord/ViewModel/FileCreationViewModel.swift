@@ -9,6 +9,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 class FileCreationViewModel: ObservableObject {
+    //test
     @Published private var emptyText: String = ""
     func createFileFromClipboardButton() {
         NSApp.activate(ignoringOtherApps: true)
