@@ -21,6 +21,9 @@ struct MenuView: View {
                 Button("Create blank file") {
                     self.viewModel.createBlankFileButton()
                 }
+                Button("Convert to UTF-8") {
+                    self.viewModel.convertRTFtoTXT()
+                }
             }
             Divider()
             Button("About Sharecord") {
@@ -47,6 +50,9 @@ struct MenuView: View {
         }
         KeyboardShortcuts.onKeyUp(for: .createBlankFile) { [self] in
             self.viewModel.createBlankFileButton()
+        }
+        KeyboardShortcuts.onKeyUp(for: .convertTextToUTF8) { [self] in
+            self.viewModel.convertRTFtoTXT()
         }
     }
 }

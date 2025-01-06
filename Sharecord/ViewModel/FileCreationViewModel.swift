@@ -9,16 +9,20 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 class FileCreationViewModel: ObservableObject {
+    private let pasteboard = NSPasteboard.general
     @Published private var emptyText: String = ""
     func createFileFromClipboardButton() {
         NSApp.activate(ignoringOtherApps: true)
         let saveURL = showSavePanel()
-        writeTextfromClipboard(to: saveURL)
+        writeTextFromClipboard(to: saveURL)
     }
     func createBlankFileButton() {
         NSApp.activate(ignoringOtherApps: true)
         let saveURL = showSavePanel()
         writeText(to: saveURL)
+    }
+    func convertRTFtoTXT() {
+        writeUTF8TextFromClipboard()
     }
     private let txt: UTType
         init() {
@@ -45,9 +49,22 @@ class FileCreationViewModel: ObservableObject {
         guard let url = url else { return }
         try? emptyText.write(to: url, atomically: true, encoding: .utf8)
     }
-    func writeTextfromClipboard(to url: URL?) {
-        let clipboardContent: String = (NSPasteboard.general.string(forType: NSPasteboard.PasteboardType.string) ?? "")
+    func writeTextFromClipboard(to url: URL?) {
+        let clipboardContent: String = (pasteboard.string(forType: NSPasteboard.PasteboardType.string) ?? "")
         guard let url = url else { return }
         try? clipboardContent.write(to: url, atomically: true, encoding: .utf8)
+    }
+    func writeUTF8TextFromClipboard() {
+        if let clipboardContent = pasteboard.string(forType: .string) {
+            if let utf8Data = clipboardContent.data(using: .utf8),
+               let utf8String = String(data: utf8Data, encoding: .utf8) {
+                pasteboard.clearContents()
+                pasteboard.setString(utf8String, forType: .string)
+            } else {
+                print("Error: The input could not be converted to UTF-8.")
+            }
+        } else {
+            print("Error: No valid content found in clipboard.")
+        }
     }
 }

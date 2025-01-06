@@ -13,6 +13,7 @@ struct KeyBindingsSettingsView: View {
         Form {
             KeyboardShortcuts.Recorder("Create file from clipboard:", name: .createFileClipboard)
             KeyboardShortcuts.Recorder("Create blank file:", name: .createBlankFile)
+            KeyboardShortcuts.Recorder("Convert to UTF-8:", name: .convertTextToUTF8)
         }
     }
 }
