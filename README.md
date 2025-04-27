@@ -1,56 +1,94 @@
-<div align="center">
-  
-  # Sharecord 
-  *Comfort to a next level*
-
-  ![GitHub Release](https://img.shields.io/github/v/release/RaphyTwin/Sharecord?sort=date&display_name=release&style=for-the-badge)
-  ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RaphyTwin/Sharecord/total?style=for-the-badge)
-
-  <img width="650" alt="SharecordMenuBar" src="https://github.com/RaphyTwin/Sharecord/blob/a34c968b7b1007d652d3e4d0933857db355259f5/images/SharecordMenuBar.png">
-
-</div>
-
-Do you want to share longer code on Discord without having to buy nitro?
-Sharecord is an easy to use tool to share code wrapped in a text file with just a few clicks.
+Klar! Hier ist eine verbesserte, stilistisch ansprechendere und professionellere Version deiner README – mit klarerer Struktur, besserem Ausdruck und einem einheitlicheren Ton:
 
 ---
 
-## Table of Contents
+<div align="center">
 
-- [Motivation](#motivation)
-- [Mission](#mission)
-- [Installation](#installation)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [Credits](#credits)
-- [License](#license)
+# 🚀 Sharecord  
+### *Comfort to a next level*
 
-## Motivation
+![GitHub Release](https://img.shields.io/github/v/release/RaphyTwin/Sharecord?sort=date&display_name=release&style=for-the-badge)  
+![GitHub Downloads](https://img.shields.io/github/downloads/RaphyTwin/Sharecord/total?style=for-the-badge)
 
-Most coders are very annoyed about the limit of a normal discord message. So there are two solutions. Either you buy Nitro or you write your code in a text file to avoid the limit. That's where Sharecord comes in: Normally you have to create a text file with TextEdit or any other program but that takes much time. With Sharecord you can easily copy the code and paste it to get a text file created. Then you can easily share unlimited lines of code in just a few seconds.
+<img width="650" alt="SharecordMenuBar" src="https://github.com/RaphyTwin/Sharecord/blob/a34c968b7b1007d652d3e4d0933857db355259f5/images/SharecordMenuBar.png">
 
-## Mission
+</div>
 
-It is our commitment to keep Sharecord open source and free forever, supported by the community.
+## ✨ What is Sharecord?
 
-We strive to remain true to Apple's human interface guidelines and development patterns, ensuring Sharecord looks and feels like an application developed by Apple themselves, which includes a meticulous attention to detail.
+**Sharecord** is the fastest way to share long code snippets on Discord — no Nitro needed.  
+Simply paste your code, let Sharecord generate a text file for you, and drag it into Discord. That's it. No more formatting issues or message limits.
 
-## Installation
+---
 
-Downlaod the [DMG File](https://github.com/RaphyTwin/Sharecord/releases/tag/latest) and drag it into the Applications folder.
+## 📚 Table of Contents
 
-## Contributing
+- [Motivation](#-motivation)
+- [Mission](#-mission)
+- [Installation](#-installation)
+- [Contributing](#-contributing)
+- [Contributors](#-contributors)
+- [Credits](#-credits)
+- [License](#-license)
 
-Be part of the next revolution in code editing by contributing to the project. This is a community-led effort, so we welcome as many contributors who can help. Read the [Contribution Guide](https://github.com/RaphyTwin/Sharecord/blob/main/CONTRIBUTING.md) for more information.
+---
 
-## Contributors
+## 💡 Motivation
 
-## Credits
+As developers, we often hit Discord's character limits when sharing code.  
+The workaround? Save the snippet as a `.txt` file — but creating and saving those files manually gets tedious fast.
 
-- This project makes use of [LaunchAtLogin](https://github.com/sindresorhus/LaunchAtLogin-Modern)
-- This project makes use of [SettingsAccess](https://github.com/orchetect/SettingsAccess)
-- This project makes use of [KeyboardShortcuts](https://github.com/sindresorhus/KeyboardShortcuts)
+**Sharecord** simplifies the process:
+- Copy your code
+- Paste it into Sharecord
+- Get a ready-to-share text file in seconds  
+Perfect for long scripts, logs, or multi-line messages.
 
-## License
+---
 
-Licensed under the [MIT License](https://opensource.org/license/mit).
+## 🎯 Mission
+
+Our goal is to make code sharing seamless — and **keep Sharecord free and open source forever**.
+
+We’re dedicated to building a native macOS experience by following Apple’s Human Interface Guidelines. Every detail matters to us — from design to performance.
+
+---
+
+## 🛠 Installation
+
+1. Download the latest [DMG release](https://github.com/RaphyTwin/Sharecord/releases/tag/latest)  
+2. Drag **Sharecord** into your `Applications` folder  
+3. Done!
+
+---
+
+## 🤝 Contributing
+
+We’re building Sharecord together — and we’d love your help!  
+Check out our [Contribution Guide](https://github.com/RaphyTwin/Sharecord/blob/main/CONTRIBUTING.md) to get started.
+
+---
+
+## 👨‍💻 Contributors
+
+<!-- Add names or use a contributors plugin -->
+
+---
+
+## 🧩 Credits
+
+Sharecord wouldn’t be possible without these amazing open-source projects:
+
+- [LaunchAtLogin](https://github.com/sindresorhus/LaunchAtLogin-Modern)
+- [SettingsAccess](https://github.com/orchetect/SettingsAccess)
+- [KeyboardShortcuts](https://github.com/sindresorhus/KeyboardShortcuts)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://opensource.org/license/mit).
+
+---
+
+Wenn du magst, kann ich auch noch ein paar Badges oder Emojis für die Contributors-Sektion hinzufügen – oder sogar ein Beispiel-GIF, wie Sharecord in Action aussieht. Möchtest du das?
