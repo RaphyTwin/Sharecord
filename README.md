@@ -52,7 +52,7 @@ We’re dedicated to building a native macOS experience by following Apple’s H
 
 ## 🛠 Installation
 
-1. Download the latest [DMG release](https://github.com/RaphyTwin/Sharecord/releases/tag/latest)  
+1. Download the latest [release](https://github.com/RaphyTwin/Sharecord/releases/tag/latest)  
 2. Drag **Sharecord** into your `Applications` folder  
 3. Done!
 
