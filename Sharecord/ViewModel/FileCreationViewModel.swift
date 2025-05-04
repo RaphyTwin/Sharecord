@@ -24,6 +24,35 @@ class FileCreationViewModel: ObservableObject {
     func convertRTFtoTXT() {
         writeUTF8TextFromClipboard()
     }
+    func uploadToPasteRS(completion: @escaping (URL?, Error?) -> Void) {
+        guard let url = URL(string: "https://paste.rs/") else {
+            completion(nil, URLError(.badURL))
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = getTextFromClipboard().data(using: .utf8)
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            
+            guard let data = data,
+                  let urlString = String(data: data, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines),
+                  let resultURL = URL(string: urlString) else {
+                let error = URLError(.badServerResponse)
+                completion(nil, error)
+                return
+            }
+            completion(resultURL, nil)
+            self.pasteboard.clearContents()
+            self.pasteboard.setString(urlString, forType: .string)
+        }
+        task.resume()
+    }
     private let txt: UTType
         init() {
             guard let type = UTType(tag: "txt", tagClass: .filenameExtension, conformingTo: .compositeContent)
@@ -49,8 +78,11 @@ class FileCreationViewModel: ObservableObject {
         guard let url = url else { return }
         try? emptyText.write(to: url, atomically: true, encoding: .utf8)
     }
+    func getTextFromClipboard() -> String {
+        self.pasteboard.string(forType: NSPasteboard.PasteboardType.string) ?? ""
+    }
     func writeTextFromClipboard(to url: URL?) {
-        let clipboardContent: String = (pasteboard.string(forType: NSPasteboard.PasteboardType.string) ?? "")
+        let clipboardContent: String = getTextFromClipboard()
         guard let url = url else { return }
         try? clipboardContent.write(to: url, atomically: true, encoding: .utf8)
     }

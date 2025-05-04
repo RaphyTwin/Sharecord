@@ -24,6 +24,13 @@ struct MenuView: View {
                 Button("Convert to UTF-8") {
                     self.viewModel.convertRTFtoTXT()
                 }
+                Button("Upload to paste.rs") {
+                    self.viewModel.uploadToPasteRS() { url, error in
+                        if let error = error {
+                            print("Something went wrong: \(error)")
+                        }
+                    }
+                }
             }
             Divider()
             Button("About Sharecord") {
@@ -53,6 +60,13 @@ struct MenuView: View {
         }
         KeyboardShortcuts.onKeyUp(for: .convertTextToUTF8) { [self] in
             self.viewModel.convertRTFtoTXT()
+        }
+        KeyboardShortcuts.onKeyUp(for: .uploadToPasteRS) { [self] in
+            self.viewModel.uploadToPasteRS() { url, error in
+                if let error = error {
+                    print("Something went wrong: \(error)")
+                }
+            }
         }
     }
 }
